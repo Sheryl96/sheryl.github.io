@@ -1,0 +1,267 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: #ffffff;
+	overflow-x: hidden;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+
+/*******************************************************************
+                            Preloader
+********************************************************************/
+
+#prelaoder {
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background:rgba(10,10,10,1)
+    ;z-index:1000
+}
+
+.spinner {
+    text-align:center;
+    font-size:10px
+}
+
+.spinner,.spinner-inner {
+    position:absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    border:9px solid #fff;
+    border-color:transparent #fff;
+    margin:auto
+}
+
+.spinner {
+    width:85px;
+    height:85px;
+    -webkit-animation:spin 2.2s linear 0s infinite normal;
+    -moz-animation:spin 2.2s linear 0s infinite normal;
+    animation:spin 2.2s linear 0s infinite normal
+}
+
+.spinner-inner {
+    width:40px;
+    height:40px;
+    -webkit-animation:spinback 1.2s linear 0s infinite normal;
+    -moz-animation:spinback 1.2s linear 0s infinite normal;
+    animation:spinback 1.2s linear 0s infinite normal
+}
+
+@-webkit-keyframes spin{from{-webkit-transform:rotate(0)}to{-webkit-transform:rotate(360deg)}}
+
+@-moz-keyframes spin{from{-moz-transform:rotate(0)}to{-moz-transform:rotate(360deg)}}
+
+@keyframes spin{from{transform:rotate(0)}to{transform:rotate(360deg)}}
+
+@-webkit-keyframes spinback{from{-webkit-transform:rotate(0)}to{-webkit-transform:rotate(-360deg)}}
+
+@-moz-keyframes spinback{from{-moz-transform:rotate(0)}to{-moz-transform:rotate(-360deg)}}
+
+@keyframes spinback{from{transform:rotate(0)}to{transform:rotate(-360deg)}}
+
+
+/*******************************************************************
+                            JUMBOTRON  
+********************************************************************/
+
+
+.home.jumbotron {
+    position: relative;
+    background: url('../images/background.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 100vh;
+    max-height: 100%;
+    margin-bottom: 0px;
+}
+
+.jumbotron .overlay {
+  position: absolute;
+  opacity: 0.7;
+  z-index: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.movedown {
+    margin-top: 209px;
+}
+
+.jumbo-text {
+    color: white;
+    font-size: 4em;
+   
+}
+
+.highlight {
+    color: rgb(255, 0, 0);
+}
+
+/*******************************************************************
+                            About 
+********************************************************************/
+
+.movedown-2 {
+    padding: 20px;
+}
+
+.divider-text {
+    color: white;
+    background: url('../images/polygon.jpg') no-repeat center center;
+    width: 100%;
+}
+
+#info-container {
+    padding: 40px;
+    font-size: 2em;
+}
+
+.heading {
+    color: rgb(88, 88, 88);
+    font-size: .7em;
+}
+
+.fonticons {
+    margin-bottom: 2px;
+}
+
+.icon-info {
+    margin-bottom: 0px;
+    font-size: 1em;
+}
+
+/*******************************************************************
+                            Skills 
+********************************************************************/
+
+#skills-info {
+    padding: 40px;
+    font-size: 7em;
+}
+
+.text-inform {
+    color: rgb(88, 88, 88);
+    font-size: .3em;
+}
+
+.grids {
+    margin-bottom: 20px;
+}
+
+/*******************************************************************
+                            Porfolio
+********************************************************************/
+
+.marg {
+    margin-bottom: 40px;
+}
+
+.resize-img {
+    max-width: 100%;
+    height: auto;
+    margin: auto 0;
+}
+
+/*******************************************************************
+                            Social
+********************************************************************/
+
+#social-media {
+    background-color: rgb(46, 0, 32);
+    color: white;
+    padding: 100px;
+}
+
+.space {
+    margin-bottom: 50px;    
+}
+
+.btn-size {
+    margin-top: 20px;
+    font-size: 2em;
+    margin-bottom: 100px;
+}
+
+.soc-link {
+    color: white;
+}
+
+.soc-link:hover {
+    color: plum;
+}
+
+/*******************************************************************
+                            Media Queries
+********************************************************************/
+
+@media all and (min-width: 768px) and (max-width: 1024px) { 
+    
+    .jumbo-text {
+        font-size: 2em;
+    }
+
+    #info-container {
+        font-size: 1em;
+    }
+
+    #skills-info {
+        font-size: 4em;
+    }
+    
+    .text-inform {
+        font-size: .4em;
+    }
+    
+
+
+}
+
+@media all and (min-width: 240px) and (max-width: 768px) {
+
+    .jumbo-text {
+        font-size: 2em;
+    }
+
+    #info-container {
+        font-size: 1em;
+    }
+
+    #skills-info {
+        font-size: 4em;
+    }
+    
+    .text-inform {
+        font-size: .4em;
+    }
+
+    .resp-text {
+        font-size: 2em;
+    }
+
+    .resp-text-2 {
+        font-size: 1.5em;
+    }
+
+    .btn-size {
+        margin-top: 20px;
+        font-size: 1em;
+        margin-bottom: 100px;
+    }
+
+    
+ }
