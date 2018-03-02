@@ -5,11 +5,13 @@ html, body {
 body {
     background-color: #ffffff;
 	overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
 }
 
 a:visited {
     text-decoration: none;
 }
+
 
 
 /*******************************************************************
@@ -78,7 +80,7 @@ a:visited {
 
 .home.jumbotron {
     position: relative;
-    background: url('../images/background.jpg') no-repeat center center;
+    background: url('../images/background_path.jpg') no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -86,11 +88,11 @@ a:visited {
     min-height: 100vh;
     max-height: 100%;
     margin-bottom: 0px;
+    font-family: 'Pacifico', cursive;
 }
 
 .jumbotron .overlay {
   position: absolute;
-  opacity: 0.7;
   z-index: auto;
   top: 0;
   left: 0;
@@ -121,14 +123,15 @@ a:visited {
 }
 
 .divider-text {
-    color: white;
-    background: url('../images/polygon.jpg') no-repeat center center;
+    color: #420241;
+    background: url('../images/abstract.jpg')  center center;
     width: 100%;
+    font-family: 'Pacifico', cursive;
 }
 
 #info-container {
     padding: 40px;
-    font-size: 2em;
+    font-size: 1.7em;
 }
 
 .heading {
@@ -172,13 +175,13 @@ a:visited {
 }
 
 .resize-img {
-    max-width: 100%;
+    max-width: 70%;
     height: auto;
     margin: auto 0;
 }
 
 /*******************************************************************
-                            Social
+                            Quote
 ********************************************************************/
 
 #social-media {
@@ -189,20 +192,6 @@ a:visited {
 
 .space {
     margin-bottom: 50px;    
-}
-
-.btn-size {
-    margin-top: 20px;
-    font-size: 2em;
-    margin-bottom: 100px;
-}
-
-.soc-link {
-    color: white;
-}
-
-.soc-link:hover {
-    color: plum;
 }
 
 /*******************************************************************
