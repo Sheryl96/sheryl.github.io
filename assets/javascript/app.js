@@ -12,10 +12,10 @@ $(window).ready(function() {
     
       // TypeIt Function for the Jumbotron Heading
       $('#type-this').typeIt({
-        strings: ["am a passionate person.", "am interested in UX/UI designing.", "look forward to learn new technology."],
+        strings: ["Always passionate about the latest in technology","I am a LinkedIn Campus Editor", "Also a Microsoft Student Partner","An out of the box thinker who believes nothing is impossible." ],
         speed: 100,
         breakLines: false,
-        deleteDelay: 2000,
+        deleteDelay: 1000,
         startDelay: 2000,
         loop: false
     })
